@@ -4,17 +4,64 @@ section#now {
 section#now .n_top {
 
 }
-section#now .n_top ul {
+section#now .n_top>ul{
+    
+    justify-content: space-between;
+    margin-top: 61px;
+}
+section#now .n_top ul.sns {
 
 }
+.sns li{
+  
+}
+
+.sns li:nth-child(1) a{
+  background-image:url(../img/sns/ico_sns_facebook.jpg)
+}
+.sns li:nth-child(2) a{
+    background-image:url(../img/sns/ico_sns_facebook.jpg)
+}
+.sns li:nth-child(3) a{
+    background-image:url(../img/sns/ico_sns_facebook.jpg)
+}
+.sns li:nth-child(4) a{
+    background-image:url(../img/sns/ico_sns_facebook.jpg)
+}
+.sns li:nth-child(5) a{
+    background-image:url(../img/sns/ico_sns_facebook.jpg)
+}
+
 section#now .n_top ul li {
 
+    padding-left: 32px;
 }
 section#now .n_top ul li p {
 
+  font-size: 26pt;
+  font-weight: bold;
 }
-section#now .n_top ul ul {
+section#now .n_top ul li p b{
+  color:
+#d22259;
+}
+section#now .n_top ul ul.listL {
 
+    display: flex;
+}
+.listL li{
+    
+    border: 1px solid #eee;
+}
+.listL li a{
+    
+    font-size: 14pt;
+    display: block;
+    font-weight: bold;
+}
+.listL li:first-child a{
+    
+    color: #d22259;
 }
 section#now .n_top ul ul li {
 
@@ -29,14 +76,59 @@ section#now .n_bottom ul {
 
 }
 section#now .n_bottom ul li {
-
+    border: 1px solid #eee;
+    width: calc((100% - 90px) / 4);
+    border-radius: 50px 10px 10px 10px;
+    height: 328px;
+}
+section#now .n_bottom ul li:not(:last-child){
+    margin-right:30px;
 }
 section#now .n_bottom ul li a {
 
+    height: 328px;
+    display: block;
+    color: #333333;
+    font-weight: bold;
+}
+section#now .n_bottom ul li:nth-child(2) a{
+    padding: 45px;
+    
+}
+section#now .n_bottom ul li:first-child a::before{
+content:"";
+    display: block;
+    width: 326px;
+    height: 173px;
+    background-image:url(../img/now1.jpg);
+    background-size: contain;
+border-radius: 50px 10px 10px 0;
+}
+section#now .n_bottom ul li:nth-child(3) a::before{
+content:"";
+    display: block;
+    width: 326px;
+    height: 173px;
+    background-image:url(../img/now3.png);
+    background-size: contain;
+border-radius: 50px 10px 10px 0;
+}
+section#now .n_bottom ul li:nth-child(4) a::before{
+content:"";
+    display: block;
+    width: 326px;
+    height: 173px;
+    background-image:url(../img/now4.jpg);
+    background-size: contain;
+border-radius: 50px 10px 10px 0;
 }
 section#now .n_bottom ul li a p {
 
+    padding-top: 23px;
 }
+
 section#now .n_bottom ul li a p.date {
 
+    padding-top: 10px;
+    color: #b2b2b2;
 }
