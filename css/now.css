@@ -147,7 +147,7 @@ content:"";
     height: 173px;
     background-image:url(../img/now1.jpg);
     background-size: contain;
-border-radius: 50px 10px 10px 0;
+border-radius: 50px 10px 50px 0;
 }
 section#now .n_bottom ul li:nth-child(3) a::before{
 content:"";
@@ -156,7 +156,7 @@ content:"";
     height: 173px;
     background-image:url(../img/now3.png);
     background-size: contain;
-border-radius: 50px 10px 10px 0;
+border-radius: 50px 10px 50px 0;
 }
 section#now .n_bottom ul li:nth-child(4) a::before{
 content:"";
@@ -165,7 +165,7 @@ content:"";
     height: 173px;
     background-image:url(../img/now4.jpg);
     background-size: contain;
-border-radius: 50px 10px 10px 0;
+border-radius: 50px 10px 50px 0;
 }
 section#now .n_bottom ul li a p {
 

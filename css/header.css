@@ -97,7 +97,7 @@ header .gnb::after{
   left: 0;
   right: 0;
   content:"";
-  top: 160px;
+  top: 138px;
 }
 header .gnb h1{
   font-size: 0;

@@ -5,16 +5,15 @@
  margin,padding,border,outline,:0;
    vertical-align:top:
   }
+
  html,body{
     height:100%;
-
   }
 
 hr{
-
 display:none;
-
 }   
+
 ul{
 list-style:none;
 }

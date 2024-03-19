@@ -11,8 +11,9 @@
   position: relative;
   border-radius: 35px;
   z-index: -2;
-  padding: 63px;
+  padding: 69px;
   box-sizing: border-box;
+  max-width: 1600px;
 }
 #tip .wrap::before{
   content:"";
@@ -34,16 +35,36 @@
   left: 0;
   bottom: 0;
   z-index: -1;
+  border-radius: 0 0 0 35px;
 }
 #tip .wrap .topT {
-
   font-weight: bold;
   padding: 44px 0;
   font-size: 25pt;
+  display: flex;
+}
+#tip .wrap .topT strong{
+  
+  font-size: 29pt;
+  position: relative;
+  padding: 0 16px;
+  margin-top: -6px;
+}
+
+#tip .wrap .topT strong::after{
+  content:"";
+  display: block;
+  background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_searvice_title.svg);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -33px;
+  left: 29px;
 }
 #tip .wrap .topT b{
   
   color: #cf0041;
+  padding-left: 13px;
 }
 #tip .wrap .topB {
 
@@ -54,14 +75,15 @@
   display: flex;
   width: 100%;
   gap: 29px;
+  justify-content: space-evenly;
 }
 #tip .wrap .topB > ul > li:nth-child(1) {
 
-  width: 26%;
+  width: 23%;
 }
 #tip .wrap .topB > ul > li:nth-child(2) {
 
-  width: 54%;
+  width: 37%;
 }
 #tip .wrap .topB > ul > li:nth-child(2) ul{
   
@@ -70,7 +92,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 35px;
+  padding: 24px;
 }
 #tip .wrap .topB > ul > li:nth-child(2) ul li{ 
   
@@ -78,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px;
+  padding: 3px;
 }
 #tip .wrap .topB > ul > li:nth-child(2) ul li p{
   
@@ -89,7 +111,7 @@
   background-color: #f6f8fe;
   width: 150px;
   border-radius: 12px;
-  padding: 24px 1px;
+  padding-top: 24px;
   font-weight: bold;
   font-size: 12pt;
 }
@@ -98,6 +120,7 @@
   display: block;
   width: 100px;
   height: 78px;
+  margin-top: 25px;
 }
 #tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(1) p::after{
 background-image:url(../img/life/ico_life_01.svg)
@@ -122,6 +145,8 @@ background-image:url(../img/life/ico_life_06.svg)
   font-weight: bold;
   color: #666666;
   font-size: 19pt;
+  padding-bottom: 21px;
+  padding-top: 11px;
 }
 #tip .wrap .topB > ul > li:nth-child(2) h4 b{ 
   
@@ -129,7 +154,20 @@ background-image:url(../img/life/ico_life_06.svg)
 }
 #tip .wrap .topB > ul > li:nth-child(3) {
 
-  width: 25%;
+  width: 30%;
+}
+
+#tip .wrap .topB > ul > li:nth-child(3) h4{
+  
+  color: #666666;
+  font-weight: bold;
+  font-size: 19pt;
+  padding-top: 11px;
+  padding-bottom: 21px;
+}
+#tip .wrap .topB > ul > li:nth-child(3) h4 b{
+  
+  color: #333333;
 }
 #tip .wrap .topB > ul > li > ul.local {
 
@@ -140,13 +178,15 @@ background-image:url(../img/life/ico_life_06.svg)
   color: white;
   font-weight: bold;
   background-color: #1283c3;
-  padding: 35px 24px;
+  padding: 31px 24px;
   border-radius: 28px 28px 0 0;
+  line-height: 1.5;
 }
 #tip .wrap .topB > ul > li > ul.local div{
   
   background-color: #359dd8;
-  padding: 24px;
+  padding: 7px 24px;
+  border-radius: 0 0 20px 20px;
 }
 #tip .wrap .topB > ul > li > ul.local div li{
   color: white;
@@ -202,7 +242,7 @@ background-image:url(../img/life/ico_life_06.svg)
     
   position: absolute;
   right: 12px;
-  top: 8px;
+  top: 0px;
 }
 #tip .wrap .topB > ul > li > ul h4 b{
 color:#ffc965;
@@ -213,7 +253,90 @@ color:#ffc965;
   font-weight: bold;
 }
 #tip .wrap .topB > ul li > div {
+background-color: #00a3b9;
+position: relative;
+border-radius: 20px;
+}
+#tip .wrap .topB > ul li > div .storyT{
+  display: flex;
+  flex-direction: row-reverse;
+}
 
+#tip .wrap .topB > ul li > div .storyT::after{
+  content:"";
+  display: block;
+  background-image: url(../img/story.jpg);
+  width: 220px;
+  height: 290px;
+  background-position: center;
+  background-size: contain;
+  margin-top: 44px;
+  margin-bottom: 0px;
+
+  margin-right: 201px;
+}
+#tip .wrap .topB > ul li > div .storyT>div{
+  position: absolute;
+  right: 96px;
+  top:51px;
+    
+}
+#tip .wrap .topB > ul li > div .storyT p:nth-child(1){
+  color:white;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 1.5;
+}
+#tip .wrap .topB > ul li > div .storyT p:nth-child(2){
+  color: #00a3b9;
+  background-color: white;
+  border-radius: 21px;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 11pt;
+}
+#tip .wrap .topB > ul li > div .storyT p strong{
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 39px;
+}
+#tip .wrap .topB > ul li > div .storyB{
+ display: flex;
+ justify-content: right; 
+flex-direction: column;
+ position: absolute;
+ right: 10px;
+ top: 197px;
+ width: 156px;
+ margin-right: 14px;
+}
+#tip .wrap .topB > ul li > div .storyB p{
+  color:white;
+  font-weight: bold;
+border: 1px solid;
+padding: 19px;
+background-repeat: no-repeat;
+
+  font-size: 11pt;
+}
+
+#tip .wrap .topB > ul li > div .storyB p:nth-child(1){
+color:white;
+  font-weight: bold;
+border: 1px solid;
+border-radius:12px 12px 0 0;
+padding: 19px;
+background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_story_01.svg);
+background-repeat: no-repeat;
+padding-left: 47px;
+background-position: 15px;
+}
+
+#tip .wrap .topB > ul li > div .storyB p:nth-child(2){
+background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_story_02.svg);
+padding-left: 48px;
+  border-radius:0 0 12px 12px;
+    background-position: 15px;
 }
 #tip .wrap .topB > ul li > div h5 {
 

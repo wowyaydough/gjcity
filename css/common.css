@@ -115,7 +115,13 @@ body{
 }
 
 
-
+.dot{
+  
+  width: 3px;
+  height: 3px;
+  margin: 0 10px;
+  background-color: #5c6776;
+}
 
 
 
