@@ -105,7 +105,7 @@ header{
 
  /* title */
  #title {
-
+    background-color: #fff8f7;
  }
  #title .wrap {
  
@@ -180,7 +180,8 @@ header{
 
  }
  #title .wrap .middle .left_bottom a{ 
-
+width: 739px;
+height: 386px;
  }
  #title .wrap .middle .left_bottom .control{
 
@@ -192,14 +193,21 @@ header{
 
  }
  #title .wrap .middle .mmr::after{
-
+top: 792px;
+height: 112px;
+box-shadow: 1px 1px 7px #d5d5d5;
  }
  #title .wrap .middle .mayer{
-
+margin-left: -153px;
+   position: relative;
+   z-index: -1;
+   margin-top: -13px;
+  }
  }
  #title .wrap .middle .mayer::after{
+ margin-top: -8px;
+}
 
- }
  #title .wrap .middle .mmr .man{
 
  }
@@ -213,7 +221,8 @@ header{
 
  }
  #title .wrap .middle .road{
-
+width: 720px;
+    height: 97px;
  }
  #title .wrap .middle .road ul{
 
@@ -322,36 +331,46 @@ header{
 
  }
  #title .wrap .bottom::before{
-
+  height: 278px;
+  top: 940px;
  }
  #title .wrap .bottom .fgnb {
 
  }
  #title .wrap .bottom .fgnb > ul:first-child {
-
+flex-wrap: wrap;
+width: 100%;
+gap: 4px;
  }
  #title .wrap .bottom .fgnb > ul > li {
- 
- }
+width: 239px;
+}
  #title .wrap .bottom .fgnb > ul:first-child > li > a {
-
+display: block;
+text-align: center;
+font-size: 11pt;
  }
  
  #title .wrap .bottom .fgnb > ul:first-child > li:first-child > a {
 
  }
  #title .wrap .bottom .fgnb > ul:nth-child(2){
-
+justify-content: space-evenly;
+align-items: center;
  }
  #title .wrap .bottom .fgnb > ul:nth-child(2) li{
 
  }
+#title .wrap .bottom .fgnb > ul:nth-child(2) li:nth-child(n+5){
+   display: none;
+}
  #title .wrap .bottom .fgnb > ul:nth-child(2) li a{
-
+width: 168px;
+display: flex;
  }
- #title .wrap .bottom .fgnb > ul:nth-child(2) li a::before{
 
- 
+ #title .wrap .bottom .fgnb > ul:nth-child(2) li:first-child a::before{
+ margin-bottom: 9px;
  }
  
  #title .wrap .bottom .fgnb > ul:nth-child(2) li a span{
@@ -383,8 +402,10 @@ header{
 
 }
 #board .b_left .b_top>ul>li:nth-child(2){
-
-  
+border-radius: 26px 0 0 0;  
+}
+#board .b_left .b_top>ul>li:nth-child(6){
+border-radius:0 0 0 26px;  
 }
 #board .b_left .b_top>ul>li:hover{
 
@@ -400,13 +421,14 @@ header{
 
 }
 #board .b_left .b_top>ul>li{
-
+padding: 19px 26px;
 }
 #board .b_left .b_top ul li a {
-
+font-size: 10pt;
+display: block;
 }
 #board .b_left .b_bottom {
-
+padding: 25px 30px;
 }
 #board .b_left .b_bottom .b_b_top {
 }
@@ -435,23 +457,26 @@ header{
 #board .b_left .b_bottom .b_b_bottom {
 
 }
-#board .b_left .b_bottom .b_b_bottom ul {
+
+#board .b_left .b_bottom .b_b_bottom ul li{
 
 }
-#board .b_left .b_bottom .b_b_bottom ul li {
-
+h3.department{
+ 
 }
 #board .b_left .b_bottom .b_b_bottom ul li h3 {
-
+font-size: 10pt;
+width: 80px;
 }
-#board .b_left .b_bottom .b_b_bottom ul li p {
-
+#board .b_left .b_bottom .b_b_bottom ul li p.manifest {
+margin-left: 34px;
+font-size: 14px;
 }
 #board .b_left .b_bottom .b_b_bottom ul li p.date {
-
+  font-size: 13px;
 }
 #board .b_left .b_bottom .b_b_bottom ul:nth-child(2) li:nth-child(2) p{
-  
+  margin-left: -44px;
 }
 #board .b_right {
 
@@ -465,7 +490,9 @@ header{
 #board .b_right article a {
 
 }
-
+#board .b_right article a.mobile{
+   display: none;
+}
 /* now */
 section#now {
 
@@ -523,11 +550,21 @@ section#now .n_bottom {
 section#now .n_bottom ul {
 
 }
+section#now .n_bottom ul li:nth-child(-n+2){
+   width: calc(100% / 2);
+
+}
+section#now .n_bottom ul li:nth-child(3){
+  display: none;
+}
 section#now .n_bottom ul li {
  
 }
-section#now .n_bottom ul li:not(:last-child){
-
+section#now .n_bottom ul li:last-child{
+display: none;
+}
+section#now .n_bottom a.mobile{
+   font-size: 14px;
 }
 section#now .n_bottom ul li a {
 
@@ -596,7 +633,7 @@ section#now .n_bottom ul li a p.date {
 
  }
  #tip .wrap .topB > ul > li:nth-child(2) ul li{ 
-
+width: 201px;
  }
  #tip .wrap .topB > ul > li:nth-child(2) ul li p{
 
@@ -612,7 +649,6 @@ section#now .n_bottom ul li a p.date {
 
  }
  #tip .wrap .topB > ul > li:nth-child(3) {
- 
  }
  
  #tip .wrap .topB > ul > li:nth-child(3) h4{
@@ -622,16 +658,18 @@ section#now .n_bottom ul li a p.date {
 
  }
  #tip .wrap .topB > ul > li > ul.local {
-
+width: 313px;
  }
  #tip .wrap .topB > ul > li > ul.local h4 {
- 
+ padding: 22px 24px;
  }
  #tip .wrap .topB > ul > li > ul.local div{
 
  }
  #tip .wrap .topB > ul > li > ul.local div li{
-
+font-size: 15px;
+padding: 9px 0;
+margin: 5px 0;
  }
  
  #tip .wrap .topB > ul > li > ul.local div li::before{
@@ -653,37 +691,45 @@ section#now .n_bottom ul li a p.date {
 
  }
  #tip .wrap .topB > ul li > div {
-
+height: 279px;
+width: 397px;
+}
  }
  #tip .wrap .topB > ul li > div .storyT{
 
  }
  
  #tip .wrap .topB > ul li > div .storyT::after{
-
+height: 256px;
+width: 192px;
+margin-right: 179px;
+margin-top: 23px;
  }
  #tip .wrap .topB > ul li > div .storyT>div{
-
-     
+  right: 86px;
+  top: 32px;
  }
  #tip .wrap .topB > ul li > div .storyT p:nth-child(1){
 
  }
  #tip .wrap .topB > ul li > div .storyT p:nth-child(2){
-
+font-size: 10pt;
  }
  #tip .wrap .topB > ul li > div .storyT p strong{
 
  }
  #tip .wrap .topB > ul li > div .storyB{
-
+top: 150px;
+width: 144px;
+margin-right: 7px;
  }
  #tip .wrap .topB > ul li > div .storyB p{
-
+    padding:16px 42px !important;
+    font-size: 13px;
  }
  
  #tip .wrap .topB > ul li > div .storyB p:nth-child(1){
-
+padding-left: 25px;
  }
  
  #tip .wrap .topB > ul li > div .storyB p:nth-child(2){
@@ -715,7 +761,12 @@ section#now .n_bottom ul li a p.date {
  #map .wrap .mapR{
 
  }
- 
+#map .wrap .mapL::after{
+   left: -102px;
+   width: 848px;
+   height: 609px;
+   background-size: contain;
+}
  #map .wrap .mapR ul{
 
  }
@@ -758,8 +809,24 @@ section#now .n_bottom ul li a p.date {
 
  }
  #map .wrap .mapL{
-
+width: 664px;
+    height: 580px;
  }
+#map .wrap .mobile li:nth-child(1) p{
+   padding: 12px 10px 12px 20px;
+
+}
+#map .wrap .mobile li:nth-child(2){
+   padding-top: 38px;
+}
+#map .wrap .mobile li:nth-child(2) p{
+ font-size: 15px;
+}
+#map .wrap .mobile li:nth-child(3) p{
+   font-size: 14px; 
+   padding-top: 6px;
+   padding-bottom: 29px;
+}
  #map .wrap .mapL figure{
  
  }
@@ -794,8 +861,12 @@ section#now .n_bottom ul li a p.date {
  section#banner .wrap ul li:last-child ul li{
    
  }
- section#banner .wrap ul li:last-child ul li a{
+section#banner .wrap ul li:last-child ul li:nth-child(n+6){
+   display: none;
+}
 
+section#banner .wrap ul li:last-child ul li a{
+font-size: 14px;
  }
  section#banner .wrap ul li:not(:last-child) a{
 
@@ -867,7 +938,7 @@ section#now .n_bottom ul li a p.date {
 
  }   
  footer .wrap .footerB .footerL .footLR .footLLR p:nth-child(2){
-
+font-size: 15px;
  }
  footer .wrap .footerB .footerL .footLR .footLLR p:nth-child(3){
    
@@ -883,11 +954,10 @@ section#now .n_bottom ul li a p.date {
  
  
  footer .wrap .footerB .footerL .footLR .footLLR ul li a{
- 
+ font-size: 15px;
 
  }
  footer .wrap .footerB .footerL .footLR .footLLR ul li:first-child a{
-
  }
  footer .wrap .footerB .footerR{
  
@@ -910,13 +980,27 @@ section#now .n_bottom ul li a p.date {
  footer .wrap .footerB .footerR .footB p{
  
  }
+footer .wrap .footerB .footerR .footB p.mobile{
+   display: block;
+   padding-left: 19px;
+   font-weight: bold;
+   font-size: 15pt;
+}
  footer .wrap .footerB .footerR .footB ul{
-
+display: flex;
  }
  footer .wrap .footerB .footerR .footB ul li{
- 
+ padding-right: 10px;
+}
  }
+footer .wrap .footerB .footerR .footB ul li.mobile{
+   display: none;
+}
  footer .wrap .footerB .footerR .footB ul li p{
     
  }
+footer .wrap .footerB .mobile{
+   display: flex;
+
+}
 }

@@ -160,7 +160,7 @@
   margin-top: 33px;
   width: 80%;
 }
-#board .b_right article a {
+#board .b_right article a:first-child {
 
   background-image: url(../img/view.png);
   display: block;

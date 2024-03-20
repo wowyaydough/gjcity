@@ -1,7 +1,23 @@
 
 @media screen and (max-width:480px) {
    /* header */
-
+  header .wrap .mobile h1{
+    font-size: 12px;
+    padding: 5px 11px 5px 8px;
+    width: fit-content;
+  }
+  
+  header .wrap .mobile h1::before{
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+  
+  header .wrap .mobile a{
+      font-size: 12px;
+  }
+    header .wrap .mobile a::before{
+padding-right: 7px;}
 header{
 
  }
@@ -77,26 +93,37 @@ header{
  }
  
  header .gnb ul.search li a{
-
+width: 38px;
+height:38px;
  }
  header .gnb ul.search li:nth-child(1) a{
 
  }
  header .gnb ul.search li:nth-child(1) a::before{
-
+    top: 18px;
+    left: 8px;
+    width: 18px;
  }
  header .gnb ul.search li:nth-child(1) a:hover::before{
 
  }
  header .gnb ul.search li:nth-child(1) a::after{
-
+    top: 12px;
+    left: 13px;
+    width: 12px;
+    height: 10px;
+  }
  }
  
  header .gnb ul.search li:nth-child(1) a:hover::after{
 
  }
  header .gnb ul.search li:nth-child(2) a::before{
-
+  left: 25%;
+  top: 27%;
+  width: 12px;
+  height: 12px;
+}
  }
  header .gnb ul.search li:nth-child(2) a::after{
 
@@ -121,10 +148,14 @@ header{
 
  }
  #title .wrap .top .left_top a{
-
+width: 70px;
+height: 57px;
  }
  #title .wrap .top .left_top a::before{
-
+  width: 21px;
+  height: 21px;
+  margin-top: 16px;
+  margin-left: 19px;
  }
  #title .wrap .top .left_top a::after{
 
@@ -142,12 +173,10 @@ header{
  }
  
  #title .wrap .top .right_top .weather{
-
+margin-left: 0;
  }
  #title .wrap .top .right_top .weather ul {
-   
-
- }
+}
  #title .wrap .top .right_top .weather ul li{
 
  }
@@ -167,7 +196,10 @@ header{
 
  }
  #title .wrap .top .left_top input{
-
+font-size: 14px;
+margin-left: 6px;
+text-align: left;
+padding-left: 7px;
  }
  
  #title .wrap .middle{
