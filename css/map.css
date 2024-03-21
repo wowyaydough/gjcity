@@ -1,0 +1,131 @@
+#map{
+
+  margin-top: 66px;
+}
+
+#map .wrap{
+
+  position: relative;
+}
+#map .wrap::before{
+content:"";
+background-color: #f4f7ff;
+display: flex;  
+width: 90%;
+height: 681px;
+position: absolute;
+z-index: -10;
+border-radius: 0 146px 0 0;
+left: -259px;
+}
+#map .wrap .mapR{
+  padding-top: 57px;
+  width: 51%;
+}
+
+#map .wrap .mapR ul{
+
+  position: relative;
+}
+#map .wrap .mapR ul li:nth-child(2){
+  position: relative;
+  z-index: 10;
+  margin-left: 47px;
+}
+#map .wrap .mapR ul li:first-child{
+  
+  margin-bottom: 20px;
+}
+#map .wrap .mapR ul li:nth-child(3){
+  background-color:white;
+  border-radius: 35px 35px 0 0;
+  padding-top: 48px;
+  margin-top: -21px;
+  padding-bottom: 23px;
+}
+#map .wrap .mapR ul li:nth-child(4){
+  background-color:#37375b;
+  border-radius: 0 0 35px 35px;
+}
+#map .wrap .mapR ul li:last-child{
+  
+}
+#map .wrap .mapR ul li:first-child p {
+  color: #222222;
+  font-weight: bold;
+  font-size: 25pt;
+  line-height: 1.3;
+}
+#map .wrap .mapR ul li:nth-child(2) p{
+  background-color: #d22259;
+  color: white;
+  width: 131px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 17px 7px;
+  font-size: 14pt;
+  font-weight: bold;
+  background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_map_title.svg);
+  background-repeat: no-repeat;
+  background-position: 29px;
+  padding-left: 23px;
+}
+
+#map .wrap .mapR ul li:nth-child(3) p{
+  color:#222222;
+  font-weight: bold;
+  line-height: 29px;
+  margin-left: 47px;
+}
+#map .wrap .mapR ul li:nth-child(4) p{
+  color:white;
+  font-weight: bold;
+  margin-left: 69px;
+  padding-top: 11px;
+  padding-bottom: 33px;
+}
+#map .wrap .mapR ul li:nth-child(4) p::before{
+  content:"";
+   background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_map_detail_map.svg);
+  background-repeat: no-repeat;
+  display: block;
+   width: 25px;
+   height: 25px;
+  transform: translatex(-116%) translateY(82%);
+}
+#map .wrap .mapR ul li:last-child a{
+  
+  border: 1px solid #767756;
+  border-radius: 27px;
+  padding: 13px 46px;
+  font-size: 12pt;
+  color: #37375b;
+  position: absolute;
+  right: 0;
+  bottom: -67px;
+  background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_dong_more.svg);
+  background-repeat: no-repeat;
+  background-position: 114px 6px;
+  padding-right: 75px;
+}
+#map .wrap .mapR ul li p strong{
+
+  color: #5546a9;
+}
+#map .wrap .mapL{
+
+  width: 40%;
+}
+#map .wrap .mapL figure{
+
+}
+
+#map .wrap .mapL figure img{
+  width: 664px;
+  height: 738px;
+  position: absolute;
+  right: -33px;
+  top: -12px;
+  z-index: 164;
+}
