@@ -1,0 +1,350 @@
+#tip {
+
+  margin-top: 50px;
+}
+#tip .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2effa;
+  position: relative;
+  border-radius: 35px;
+  z-index: -2;
+  padding: 69px;
+  box-sizing: border-box;
+  max-width: 1600px;
+}
+#tip .wrap::before{
+  content:"";
+  display:block;
+  background-image:url(https://www.gjcity.go.kr/portal/img/main/bak_service_01.svg);
+  width: 272px;
+  height: 310px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+#tip .wrap::after{
+  content:"";
+    background-image:url(https://www.gjcity.go.kr/portal/img/main/bak_service_02.svg);
+  width: 726px;
+  height: 422px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 0 35px;
+}
+#tip .wrap .topT {
+  font-weight: bold;
+  padding: 44px 0;
+  font-size: 25pt;
+  display: flex;
+}
+#tip .wrap .topT strong{
+  
+  font-size: 29pt;
+  position: relative;
+  padding: 0 16px;
+  margin-top: -6px;
+}
+
+#tip .wrap .topT strong::after{
+  content:"";
+  display: block;
+  background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_searvice_title.svg);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -33px;
+  left: 29px;
+}
+#tip .wrap .topT b{
+  
+  color: #cf0041;
+  padding-left: 13px;
+}
+#tip .wrap .topB {
+
+  width: 100%;
+}
+#tip .wrap .topB > ul {
+
+  display: flex;
+  width: 100%;
+  gap: 29px;
+  justify-content: space-evenly;
+}
+#tip .wrap .topB > ul > li:nth-child(1) {
+
+  width: 22%;
+}
+#tip .wrap .topB > ul > li:nth-child(2) {
+
+  width: 42%;
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul{
+  
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 24px;
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li{ 
+  
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li p{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8fe;
+  width: 150px;
+  border-radius: 12px;
+  padding-top: 24px;
+  font-weight: bold;
+  font-size: 12pt;
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li p::after{
+  content:"";
+  display: block;
+  width: 100px;
+  height: 78px;
+  margin-top: 25px;
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(1) p::after{
+background-image:url(../img/life/ico_life_01.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(2) p::after{
+background-image:url(../img/life/ico_life_02.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(3) p::after{
+background-image:url(../img/life/ico_life_03.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(4) p::after{
+background-image:url(../img/life/ico_life_04.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(5) p::after{
+background-image:url(../img/life/ico_life_05.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) ul li:nth-child(6) p::after{
+background-image:url(../img/life/ico_life_06.svg)
+}
+#tip .wrap .topB > ul > li:nth-child(2) h4{
+  
+  font-weight: bold;
+  color: #666666;
+  font-size: 19pt;
+  padding-bottom: 21px;
+  padding-top: 11px;
+}
+#tip .wrap .topB > ul > li:nth-child(2) h4 b{ 
+  
+  color: #333333;
+}
+#tip .wrap .topB > ul > li:nth-child(3) {
+
+  width: 36%;
+}
+
+#tip .wrap .topB > ul > li:nth-child(3) h4{
+  
+  color: #666666;
+  font-weight: bold;
+  font-size: 19pt;
+  padding-top: 11px;
+  padding-bottom: 21px;
+}
+#tip .wrap .topB > ul > li:nth-child(3) h4 b{
+  
+  color: #333333;
+}
+#tip .wrap .topB > ul > li > ul.local {
+
+  position: relative;
+}
+#tip .wrap .topB > ul > li > ul.local h4 {
+
+  color: white;
+  font-weight: bold;
+  background-color: #1283c3;
+  padding: 31px 24px;
+  border-radius: 28px 28px 0 0;
+  line-height: 1.5;
+}
+#tip .wrap .topB > ul > li > ul.local div{
+  
+  background-color: #359dd8;
+  padding: 7px 24px;
+  border-radius: 0 0 20px 20px;
+}
+#tip .wrap .topB > ul > li > ul.local div li{
+  color: white;
+  font-weight: bold;
+  border: 1px solid;
+  margin: 13px 0;
+  padding: 11px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+}
+
+#tip .wrap .topB > ul > li > ul.local div li::before{
+  content:"";
+  display:block;
+  
+  width: 38px;
+  height: 31px;
+  margin-left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 11px;
+}
+
+#tip .wrap .topB > ul > li > ul.local div li:nth-child(1)::before{
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAdCAYAAADCdc79AAAB2UlEQVRYR+2XzytEURTH59lQ2JikKCILPxY2smFnJ8mvlKVkQxbzF1ioKRGKhWYrJU2WNpQFSSlLC1lIkYmGlAml53Om+6bbK+89dT2vzK1v971zf5zPnHvPnfusWMSKFTGeWDSBbNsuI1LraBDFQ47aK/4OUcKyrKt8hADapKpHCygTMlAF/mZQHUDdFjClvLyhcQzbIcPk3cFQQ3WPOgSolodbRXj3F0AK6pl6uAj03QqwUt4RosMig5u0CSQLbrBLFqY0ewb7tAq71L1a2wptx6otTe0cM5/Yx3S4IECTDGjUBqU0oIQLaE05HaDu0tp2GXOu2uZdQHM/Agp7c/tGKHJA6myYAKxFg9tjCXZ+A9Y3QnS4xPETOtUAhnjeB0r2l9HiCURjP962UDXOPxzP2CWDDlA59pxJIj8gSckkTptdmdDA+7UCffzXQKP8+mUiJDeAQiGsnbycoTht2dAiJI5wLtcQ2S8nmuMRnrPACLDREiTLevAoad+ueRbAVYCM7h8VgOK/vecS60tWQs93NMtSbBjdGAEnA6aVrheozblTywVfDr0l9BBwHlPdKploCuUISF/hMwjKJEY5oatMeQo4j5z4R0juWy/R/C4L+EtC6Ra5CH0BHZYwrQvliqoAAAAASUVORK5CYII=);
+}
+
+#tip .wrap .topB > ul > li > ul.local div li:nth-child(2)::before{
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAdCAYAAADCdc79AAADpUlEQVRYR82Xa2iPURzH96dtmVteKK1R5jKLzUTEC/7Yi5GIvHJLclsz1+S2KZZ4I16geMGUeCOs0ch1ZbmEMtfmfhcpipHb3+e7nv+/5//sPGfP9N/aqW/neX7X7/md85xznlBSG2uhNsYnqUUJRSKRcgY8zTLoX+iWhUKhQ1GbFiMEmXkkKQG7wC0fUpuRZ0Ooe2sQWk+S0SQr8KsQpHPQ1YJU7H7KzlghDLPR9fcGwqki6JojRmIIEWgrSdcCMf7gIpDB8wVw3pFVQ7DGMvqEEbpPkmMOqTBJLyspRCdoAboIZKJrVMWoPpEVekLQxaASnAQvDVXIQjYGQp1ao0J7STIddAWaEhESgXRw0UXgOIRUSWNLWIWc6ZlEfxTka8oIvprnAp7H+xFw/ES6t2Mzh34wWGXx6YPuIOhM7K+y8/vKMtFp6tIxfBeEEDal2Gtf+eEioPgRCyHpU4WmPvvJGO3DqIczco12De8DLVP0FF0NNrNtVXTrGMQU3k8EIbQbo24En+EQGktfwXsXCyFt/33BlaCEsBsC6ok7MerjN2WvMCjBUPOrT16JHoGeyF6bEmKThlz2YVAVgJSq3w+MJOZ7X0IEXo5yCUYiEWvIn/OyDvkRS5UOoPuDzfymCBFP038XZGFfZyMktmUYadrchDQlX5AXWQg9Q1fqPr1txCClTfcM9mVGQhisQFHkrY6M0S2iK0Y3yJQE/QDkD0AGNm+aqpATcyn9Aux1yDa0uDVEUJ28tRjM8gZE1wvZC5CDXqWOa+gLERSiyw1CxiE0gv4qSMbvdxwhArZDIKEW2TWfKmjnrkS/zUDoHrI6dFObQagjttoQ8/C77SWkkUkY2zUNSbVjrwTlLl2YZ12wtL6GBiUTtaMQj3neiO9hL6FxCM6BNJTu3TaWA2cdpvqSvK0Kn/3NJSN7Yl6iU9W3xxFylA9VIWfEN+j/+iRRqb9ZCGiRat8yDgx5CtB9KxkMA7kQ0pQ3WtTtkc0FO4Fuh9cNSbW4dWC670ZeM03tHXDa4K8qb3H8P9PfjJJpRCjqTBl38JwPhmP83R0Unc6eFPd2703qbB86bOWvNRJr6PbwMgp5noGs/28QjtU4aLHqGDgLOoBioFuiEr01BXQNSjt6GJwC2mR1NdGfiL5C+WtJNGrW3yBIbcJjJtC9RZudbpAbCPbJRsZFSsfQQqCfho9AFzydkVpfxhbov0xfF0EaLlD/03Tw4l8fxDcQoSCBEmXzDy9Kgi2EPERXAAAAAElFTkSuQmCC)  
+}
+
+#tip .wrap .topB > ul > li > ul.local div li:nth-child(3)::before{
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAdCAYAAADCdc79AAAC20lEQVRYR9WXR2gVQRjHs14UvEgI2ElAUxTLQdQgEmIjEhUvehL0rBfxqB48CV5ssddoyCUQREEjCnqJFSSBgIgNWyy5idgLz98/zD7mzdumb9+iA39mdubb7/vtt1N2vYp/rHhZ8+RyuUXErEXtnuf9cONnCgTMRgAOoydoCKCFmQMBMYugrUZzqK+hTegVGgfUkA1VlgwBsdSCqKd9C/Wgteg0EG3Y5MoGhO8xFoCyMdoACKIHgNfKAnY3qbosoPG03yXKEDePwnA2GhEy8ZXdeQZkGfWgA1E0YQOAJgD0NhKIm2ZisAcp7SpFjq3+93oFJgu3Q8Dz3QFAEwF6EwrEDcsZvIw60EHUxw2/ggJhe5X+64zvigPxxwOALjK2Dh8ffJv8pMZY7fvoPAbb4oKkBHSDOFXEmxYEtIbOvQxOjoPReEpAU3D1ALUSV9tBhZ2hnVzPYGB1hkDVSgJ6SdwtLtAOOpoZ0NYeW0rJkJmfmps16AjqJ+52F2gVHSdlxOCXOKISgQ7h/ydqRHfQAmIOr9KCndqsggEGdeZElhKBdJ5pO3mMBom32A/mAs1n4AIaQMdQH/oWQnaG/r9a9uY1fafuAGaD7b/oLOPJqzDYjUQ9KSJNAtVTdiP/iPgUlVZ/HzIP+5W6FiCd/PkSebjiYCyWOjq0JI+jLuveTtra9vWkOr9kOwwmEeiZC2cByZfmaR12em3JgHwrHOkVao9qt/oKdmpsmgyY4HT83LPg7uo+C+gEl59RPT4flQXIdkrgBgtuCe0XBq6Z+ig6hT6iBoAelh3Igas0cCuoW5DOyHOoH00F6GmmQA7ceq7PIs2fXmAEWFASfTEmmUOu47BrfNUxptV1Kcgmc6A48P8WSMu2kzQf8J/QLOFu+nRap1aSZmg/EfX93KKvO2D20d6MmrjuTY0GR0mBRmJ7BU1Hz9FctPVPPl+TQicCsl7TSto1SN/a+tdKvfwGT5SbLWke38wAAAAASUVORK5CYII=) 
+}
+
+#tip .wrap .topB > ul > li > ul.local div li:nth-child(4)::before{
+   background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAYAAABE4bxTAAAD30lEQVRYR82Xe2iNYRzHHbYSNbmHZTWXKFZYwlb+mEYZGrbYCtukIYSMhC1/EZbaPySsJcMMf2xSii2EXKZcEtqWXHK/pOTSjs93Pe/pPe/e95yzc9Ce+vZcfrfv+zzP+f2e4+vWxZovFj5+v38Q9kmg2efzffDyhV53ZMkgAb27oWJGRYgA2TjdAiYDP5CfZ6CUgMetgOgNZrwTrLCReM/4PFiO7i8nuU4TIkgpTspAPdgK7puvzzXBqwhUhF4q88vgJqgG58APkAFKQC+Qj+4jO6lOESLIDIwvgiwciVBQQz6ThTqwRjsAbqG30qmnObrH6PognxMLIX3tNZxscAtiAhXRl4M49HqH0NPdewKWonfC0ot4h/giOf8GJuDgXohAA5C9A9Xo5XnpGfI19K3obYqG0DSMGjGODxXEBNLFXY3uyTCEjiBPRC8zGkJjMdIF1Ll/DUcqEjm7vhu9ZPzlRENIO/MTTAqXSyIhY3byFH0L/jZ7EoJ1P6dDDD4aB830ZcyrIg0a5sgeIq/A3wFXQpBRrpjn4uQKa6uAck0GDtIsHWwSGU90YBjzB+AouvrFdWjYZbFYCwbar0DgV4ZCPsI9QFlVzO1tH5OXCgDuAM1HGRIi9BaoJFj4zlj5pRikEFDJM9CINZfJIaCdn4n8uSW0E1L2zESo5BfUcFDGwnqQAPSTFqkAAWxanDaaY6dMXYdcH9DeWDtMNx+IxG8QjzwlGkJTMSr2Cu7yEQqio87G5hJE4hgr74wBOazpSEXws5mrArQXRYt5uB1SQnS7X5Z9fwb2u6T7pjtUaIqsyKjq57L2ypAZTt8K0li7HjMhAs3GyRJDZCS9Mrl1nCoxtegof4mMfqHaGRVY6yO0K0msjbbWYt4hAg7F2VqgJ4kcVwoEaUSWbshcYF5gBTW7c5Be2T8d2Ze/RsgRRCVgGVgMPoG+oJyAGx16SoQ7DJkmuyzmHbI7sx3FEMZ6D72GzG0HGd0t1bgFyM447f8JITeS5phE8irYBpm9bnr/jZApSSLTABllfdfmSgjjhWjvAvUYrzOJMeTP3iuA7Rj1wuyBv1mhdL0IncZI2bQNB3GGUCpj1Z9ON+wrMNLzVvlGmd6zeRGagsV2UIODShzqH8UI8BQowwaAPOiR7oyErUqOaqTI6AkcstkJFRoSysaBYse4J9gPlPrPgnEG4+n1LlaiCyKpOcFfQGYRY/3jyGOuPmwLelPjoAGL6S5Wj1krwOkNuwx95RmLoHqRVK/1NqBSUYKddiii1uGRTxCVgKCGQx1ZxA0f2jmVjCZs30RsiGLE/zo64zQW3S5H6A+gdcEuG3kxqAAAAABJRU5ErkJggg==);
+}
+
+#tip .wrap .topB > ul > li > ul.local div li::after{
+  content:">";
+  position: absolute;
+  right: 14px;
+}
+#tip .wrap .topB > ul > li > ul h4::after{
+  content:"";
+  display: block;
+  width: 106px;
+  height: 94px;
+  background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_service_title.svg);
+    
+  position: absolute;
+  right: 12px;
+  top: 0px;
+}
+#tip .wrap .topB > ul > li > ul h4 b{
+color:#ffc965;
+}
+#tip .wrap .topB > ul > li > ul.local > li {
+
+  color: white;
+  font-weight: bold;
+}
+#tip .wrap .topB > ul li > div {
+background-color: #00a3b9;
+position: relative;
+border-radius: 20px;
+}
+#tip .wrap .topB > ul li > div .storyT{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#tip .wrap .topB > ul li > div .storyT::after{
+  content:"";
+  display: block;
+  background-image: url(../img/story.jpg);
+  width: 220px;
+  height: 290px;
+  background-position: center;
+  background-size: contain;
+  margin-top: 44px;
+  margin-bottom: 0px;
+
+  margin-right: 201px;
+}
+#tip .wrap .topB > ul li > div .storyT>div{
+  position: absolute;
+  right: 96px;
+  top:51px;
+    
+}
+#tip .wrap .topB > ul li > div .storyT p:nth-child(1){
+  color:white;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 1.5;
+}
+#tip .wrap .topB > ul li > div .storyT p:nth-child(2){
+  color: #00a3b9;
+  background-color: white;
+  border-radius: 21px;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 11pt;
+  text-align: center;
+}
+#tip .wrap .topB > ul li > div .storyT p strong{
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 39px;
+}
+#tip .wrap .topB > ul li > div .storyB{
+ display: flex;
+ justify-content: right; 
+flex-direction: column;
+ position: absolute;
+ right: 10px;
+ top: 197px;
+ width: 156px;
+ margin-right: 14px;
+}
+#tip .wrap .topB > ul li > div .storyB p{
+  color:white;
+  font-weight: bold;
+border: 1px solid;
+padding: 19px;
+background-repeat: no-repeat;
+
+  font-size: 11pt;
+}
+
+#tip .wrap .topB > ul li > div .storyB p:nth-child(1){
+color:white;
+  font-weight: bold;
+border: 1px solid;
+border-radius:12px 12px 0 0;
+padding: 19px;
+background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_story_01.svg);
+background-repeat: no-repeat;
+padding-left: 47px;
+background-position: 15px;
+}
+
+#tip .wrap .topB > ul li > div .storyB p:nth-child(2){
+background-image: url(https://www.gjcity.go.kr/portal/img/main/ico_story_02.svg);
+padding-left: 48px;
+  border-radius:0 0 12px 12px;
+    background-position: 15px;
+}
+#tip .wrap .topB > ul li > div h5 {
+
+}
+#tip .wrap .topB > ul li > div h5 > div {
+
+}
+#tip .wrap .topB > ul li > div h5 > div p {
+
+}
